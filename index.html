@@ -354,6 +354,326 @@
   --neon-orange:#ff8800; --neon-orange-dim:rgba(255,136,0,0.1); --neon-orange-glow:rgba(255,136,0,0.5);
   --neon-pink:#ff0088; --neon-pink-dim:rgba(255,0,136,0.1); --neon-pink-glow:rgba(255,0,136,0.5);
   --neon-gold:#ffdd00; --neon-gold-dim:rgba(255,221,0,0.1);
+  --neon-purple:#aa00ff; --neon-purple-dim:rgba(170,0,255,0.1); --neon-purple-glow:rgba(1  --neon-blue-glow:rgba(0,207,255,0.35);
+  --neon-purple:  #ff4500;           /* deep orange-red */
+  --neon-purple-dim:rgba(255,69,0,0.12);
+  --neon-purple-glow:rgba(255,69,0,0.3);
+  --neon-green:   #00e676;           /* vivid green */
+  --neon-green-dim:rgba(0,230,118,0.1);
+  --neon-green-glow:rgba(0,230,118,0.3);
+  --neon-pink:    #ff3d00;           /* fiery red-orange */
+  --neon-pink-dim:rgba(255,61,0,0.12);
+  --neon-pink-glow:rgba(255,61,0,0.35);
+  --neon-orange:  #ff6d00;
+  --neon-orange-dim:rgba(255,109,0,0.12);
+  --neon-orange-glow:rgba(255,109,0,0.3);
+  --neon-gold:    #ffab00;
+  --neon-gold-dim:rgba(255,171,0,0.12);
+
+  /* Kept from original for JS compatibility */
+  --green:        #00e676;
+  --green-dim:    rgba(0,230,118,0.1);
+  --green-glow:   rgba(0,230,118,0.3);
+  --red:          #ff3d00;
+  --yellow:       #ffab00;
+  --orange:       #ff6d00;
+  --orange-dim:   rgba(255,109,0,0.12);
+  --orange-glow:  rgba(255,109,0,0.3);
+  --blue:         #00cfff;
+  --text:         #f0f0ff;
+  --muted:        rgba(255,255,255,0.45);
+  --muted2:       rgba(255,255,255,0.22);
+
+  /* Metric palette */
+  --sets-color:   #00cfff;           /* cyan — Sets */
+  --sets-dim:     rgba(0,207,255,0.12);
+  --sets-glow:    rgba(0,207,255,0.28);
+  --reps-color:   #00e676;           /* green — Reps */
+  --reps-dim:     rgba(0,230,118,0.12);
+  --reps-glow:    rgba(0,230,118,0.28);
+  --weight-color: #ff6d00;           /* orange — Weight */
+  --weight-dim:   rgba(255,109,0,0.12);
+  --weight-glow:  rgba(255,109,0,0.28);
+  --dur-color:    #ffab00;           /* amber — Duration */
+  --dur-dim:      rgba(255,171,0,0.12);
+  --dur-glow:     rgba(255,171,0,0.28);
+
+  /* Premium */
+  --pr-pink:      #ff3d00;
+  --pr-pink-dim:  rgba(255,61,0,0.12);
+  --pr-pink-glow: rgba(255,61,0,0.35);
+  --purple:       #00cfff;
+  --purple-dim:   rgba(0,207,255,0.12);
+  --purple-glow:  rgba(0,207,255,0.28);
+  --recovery-fresh: #00e676;
+  --recovery-mod:   #ffab00;
+  --recovery-sore:  #ff3d00;
+
+  /* Layout */
+  --radius:     16px;
+  --radius-sm:  10px;
+  --radius-xs:  7px;
+
+  /* ── Card Style Customization (controlled by JS) ── */
+  --card-opacity:     0.88;          /* glass alpha: 0.0–1.0 */
+  --card-blur:        16px;          /* backdrop-filter blur */
+  --card-shadow:      0 4px 24px rgba(0,0,0,0.35);
+  --card-radius:      16px;          /* overrides --radius for cards */
+  --card-border-alpha:0.10;          /* border opacity multiplier context */
+  --card-glow-alpha:  0.0;           /* extra glow ring on cards */
+  --card-solid-bg:    rgba(14,16,26,0.96); /* used in solid mode */
+  --card-mode:        glass;         /* "glass" | "solid" */
+}
+
+/* ================================================================
+   THEMES — applied to <html> via data-theme attribute
+================================================================ */
+
+/* 1. GRINDX (default — already in :root, nothing to override) */
+
+/* 2. MIDNIGHT BLUE */
+[data-theme="midnight"] {
+  --bg:#050d1a; --bg2:#081020;
+  --surface:rgba(0,80,180,0.07); --surface2:rgba(0,100,220,0.11);
+  --glass:rgba(5,15,35,0.82); --glass2:rgba(8,18,42,0.92);
+  --border:rgba(0,120,255,0.12); --border2:rgba(0,150,255,0.2);
+  --neon-blue:#4d9fff; --neon-blue-dim:rgba(77,159,255,0.14); --neon-blue-glow:rgba(77,159,255,0.38);
+  --neon-green:#00e5ff; --neon-green-dim:rgba(0,229,255,0.12); --neon-green-glow:rgba(0,229,255,0.32);
+  --neon-orange:#4d9fff; --neon-orange-dim:rgba(77,159,255,0.12); --neon-orange-glow:rgba(77,159,255,0.3);
+  --neon-pink:#7b61ff; --neon-pink-dim:rgba(123,97,255,0.12); --neon-pink-glow:rgba(123,97,255,0.3);
+  --neon-gold:#4dd0ff; --neon-gold-dim:rgba(77,208,255,0.12);
+  --green:#00e5ff; --green-dim:rgba(0,229,255,0.12); --green-glow:rgba(0,229,255,0.32);
+  --orange:#4d9fff; --orange-dim:rgba(77,159,255,0.12); --orange-glow:rgba(77,159,255,0.3);
+  --red:#7b61ff; --yellow:#4dd0ff;
+  --sets-color:#4d9fff; --reps-color:#00e5ff; --weight-color:#7b61ff; --dur-color:#4dd0ff;
+}
+
+/* 3. NEON PURPLE */
+[data-theme="purple"] {
+  --bg:#0a0514; --bg2:#0d0720;
+  --surface:rgba(140,50,255,0.06); --surface2:rgba(140,50,255,0.1);
+  --glass:rgba(10,5,22,0.82); --glass2:rgba(14,8,30,0.92);
+  --border:rgba(160,80,255,0.12); --border2:rgba(180,100,255,0.2);
+  --neon-blue:#c87eff; --neon-blue-dim:rgba(200,126,255,0.14); --neon-blue-glow:rgba(200,126,255,0.38);
+  --neon-green:#b44dff; --neon-green-dim:rgba(180,77,255,0.12); --neon-green-glow:rgba(180,77,255,0.32);
+  --neon-orange:#ff61d8; --neon-orange-dim:rgba(255,97,216,0.12); --neon-orange-glow:rgba(255,97,216,0.3);
+  --neon-pink:#ff61d8; --neon-pink-dim:rgba(255,97,216,0.12); --neon-pink-glow:rgba(255,97,216,0.35);
+  --neon-gold:#c87eff; --neon-gold-dim:rgba(200,126,255,0.12);
+  --green:#b44dff; --green-dim:rgba(180,77,255,0.12); --green-glow:rgba(180,77,255,0.32);
+  --orange:#ff61d8; --orange-dim:rgba(255,97,216,0.12); --orange-glow:rgba(255,97,216,0.3);
+  --red:#ff61d8; --yellow:#c87eff;
+  --sets-color:#c87eff; --reps-color:#b44dff; --weight-color:#ff61d8; --dur-color:#c87eff;
+}
+
+/* 4. FOREST GREEN */
+[data-theme="forest"] {
+  --bg:#030e08; --bg2:#051209;
+  --surface:rgba(0,180,80,0.06); --surface2:rgba(0,200,90,0.1);
+  --glass:rgba(3,14,8,0.82); --glass2:rgba(5,18,10,0.92);
+  --border:rgba(0,200,90,0.1); --border2:rgba(0,220,100,0.18);
+  --neon-blue:#00e676; --neon-blue-dim:rgba(0,230,118,0.14); --neon-blue-glow:rgba(0,230,118,0.4);
+  --neon-green:#69ff47; --neon-green-dim:rgba(105,255,71,0.12); --neon-green-glow:rgba(105,255,71,0.32);
+  --neon-orange:#00e676; --neon-orange-dim:rgba(0,230,118,0.12); --neon-orange-glow:rgba(0,230,118,0.3);
+  --neon-pink:#69ff47; --neon-pink-dim:rgba(105,255,71,0.12); --neon-pink-glow:rgba(105,255,71,0.3);
+  --neon-gold:#c6ff00; --neon-gold-dim:rgba(198,255,0,0.12);
+  --green:#00e676; --green-dim:rgba(0,230,118,0.12); --green-glow:rgba(0,230,118,0.32);
+  --orange:#69ff47; --orange-dim:rgba(105,255,71,0.12); --orange-glow:rgba(105,255,71,0.3);
+  --red:#ff6d00; --yellow:#c6ff00;
+  --sets-color:#00e676; --reps-color:#69ff47; --weight-color:#c6ff00; --dur-color:#00e676;
+}
+
+/* 5. SUNSET RED */
+[data-theme="sunset"] {
+  --bg:#0f0503; --bg2:#170705;
+  --surface:rgba(255,80,20,0.06); --surface2:rgba(255,100,30,0.1);
+  --glass:rgba(15,5,3,0.84); --glass2:rgba(22,8,5,0.92);
+  --border:rgba(255,90,30,0.11); --border2:rgba(255,110,40,0.2);
+  --neon-blue:#ff6d00; --neon-blue-dim:rgba(255,109,0,0.14); --neon-blue-glow:rgba(255,109,0,0.4);
+  --neon-green:#ff9500; --neon-green-dim:rgba(255,149,0,0.12); --neon-green-glow:rgba(255,149,0,0.32);
+  --neon-orange:#ff4500; --neon-orange-dim:rgba(255,69,0,0.12); --neon-orange-glow:rgba(255,69,0,0.35);
+  --neon-pink:#ff1744; --neon-pink-dim:rgba(255,23,68,0.12); --neon-pink-glow:rgba(255,23,68,0.35);
+  --neon-gold:#ffab00; --neon-gold-dim:rgba(255,171,0,0.12);
+  --green:#ff9500; --green-dim:rgba(255,149,0,0.12); --green-glow:rgba(255,149,0,0.32);
+  --orange:#ff4500; --orange-dim:rgba(255,69,0,0.12); --orange-glow:rgba(255,69,0,0.3);
+  --red:#ff1744; --yellow:#ffab00;
+  --sets-color:#ff6d00; --reps-color:#ff9500; --weight-color:#ff4500; --dur-color:#ffab00;
+}
+
+/* 6. ARCTIC WHITE (light theme) */
+[data-theme="arctic"] {
+  --bg:#f0f4f8; --bg2:#e8eef4;
+  --surface:rgba(0,0,0,0.04); --surface2:rgba(0,0,0,0.07);
+  --glass:rgba(255,255,255,0.75); --glass2:rgba(255,255,255,0.88);
+  --border:rgba(0,0,0,0.09); --border2:rgba(0,0,0,0.14);
+  --neon-blue:#0062cc; --neon-blue-dim:rgba(0,98,204,0.1); --neon-blue-glow:rgba(0,98,204,0.25);
+  --neon-green:#00875a; --neon-green-dim:rgba(0,135,90,0.1); --neon-green-glow:rgba(0,135,90,0.25);
+  --neon-orange:#cc4400; --neon-orange-dim:rgba(204,68,0,0.1); --neon-orange-glow:rgba(204,68,0,0.25);
+  --neon-pink:#c7003a; --neon-pink-dim:rgba(199,0,58,0.1); --neon-pink-glow:rgba(199,0,58,0.25);
+  --neon-gold:#b35c00; --neon-gold-dim:rgba(179,92,0,0.1);
+  --green:#00875a; --green-dim:rgba(0,135,90,0.1); --green-glow:rgba(0,135,90,0.25);
+  --orange:#cc4400; --orange-dim:rgba(204,68,0,0.1); --orange-glow:rgba(204,68,0,0.25);
+  --red:#c7003a; --yellow:#b35c00;
+  --text:#0d1117; --muted:rgba(0,0,0,0.5); --muted2:rgba(0,0,0,0.28);
+  --sets-color:#0062cc; --reps-color:#00875a; --weight-color:#cc4400; --dur-color:#b35c00;
+}
+
+/* 7. GOLD OBSIDIAN */
+[data-theme="gold"] {
+  --bg:#0a0800; --bg2:#0f0c00;
+  --surface:rgba(200,150,0,0.06); --surface2:rgba(220,170,0,0.1);
+  --glass:rgba(10,8,0,0.84); --glass2:rgba(15,12,0,0.92);
+  --border:rgba(210,160,0,0.12); --border2:rgba(230,180,0,0.2);
+  --neon-blue:#ffd600; --neon-blue-dim:rgba(255,214,0,0.14); --neon-blue-glow:rgba(255,214,0,0.4);
+  --neon-green:#ffab00; --neon-green-dim:rgba(255,171,0,0.12); --neon-green-glow:rgba(255,171,0,0.35);
+  --neon-orange:#ffd600; --neon-orange-dim:rgba(255,214,0,0.12); --neon-orange-glow:rgba(255,214,0,0.3);
+  --neon-pink:#ff8f00; --neon-pink-dim:rgba(255,143,0,0.12); --neon-pink-glow:rgba(255,143,0,0.35);
+  --neon-gold:#ffd600; --neon-gold-dim:rgba(255,214,0,0.14);
+  --green:#ffab00; --green-dim:rgba(255,171,0,0.12); --green-glow:rgba(255,171,0,0.32);
+  --orange:#ffd600; --orange-dim:rgba(255,214,0,0.12); --orange-glow:rgba(255,214,0,0.3);
+  --red:#ff8f00; --yellow:#ffd600;
+  --sets-color:#ffd600; --reps-color:#ffab00; --weight-color:#ff8f00; --dur-color:#ffd600;
+}
+
+/* 8. CYBER PINK */
+[data-theme="cyber"] {
+  --bg:#0a0010; --bg2:#0e0018;
+  --surface:rgba(255,20,147,0.06); --surface2:rgba(255,20,147,0.1);
+  --glass:rgba(10,0,16,0.84); --glass2:rgba(14,0,24,0.92);
+  --border:rgba(255,20,147,0.12); --border2:rgba(255,20,147,0.2);
+  --neon-blue:#ff1493; --neon-blue-dim:rgba(255,20,147,0.14); --neon-blue-glow:rgba(255,20,147,0.4);
+  --neon-green:#ff69b4; --neon-green-dim:rgba(255,105,180,0.12); --neon-green-glow:rgba(255,105,180,0.32);
+  --neon-orange:#ff1493; --neon-orange-dim:rgba(255,20,147,0.12); --neon-orange-glow:rgba(255,20,147,0.35);
+  --neon-pink:#ff1493; --neon-pink-dim:rgba(255,20,147,0.12); --neon-pink-glow:rgba(255,20,147,0.4);
+  --neon-gold:#ff69b4; --neon-gold-dim:rgba(255,105,180,0.12);
+  --green:#ff69b4; --green-dim:rgba(255,105,180,0.12); --green-glow:rgba(255,105,180,0.32);
+  --orange:#ff1493; --orange-dim:rgba(255,20,147,0.12); --orange-glow:rgba(255,20,147,0.3);
+  --red:#ff1493; --yellow:#ff69b4;
+  --sets-color:#ff1493; --reps-color:#ff69b4; --weight-color:#ff1493; --dur-color:#ff69b4;
+}
+
+/* ================================================================
+   PREMIUM THEME PACKS v2 — 6 New Themes
+================================================================ */
+
+/* NEON RAGE — Electric magenta + acid yellow on jet black */
+[data-theme="neon-rage"] {
+  --bg:#050005; --bg2:#0a000a;
+  --surface:rgba(255,0,200,0.05); --surface2:rgba(255,0,200,0.09);
+  --glass:rgba(5,0,5,0.82); --glass2:rgba(8,0,8,0.92);
+  --border:rgba(255,0,200,0.13); --border2:rgba(255,0,200,0.22);
+  --neon-blue:#ff00cc; --neon-blue-dim:rgba(255,0,204,0.14); --neon-blue-glow:rgba(255,0,204,0.5);
+  --neon-green:#ccff00; --neon-green-dim:rgba(204,255,0,0.13); --neon-green-glow:rgba(204,255,0,0.45);
+  --neon-orange:#ff00cc; --neon-orange-dim:rgba(255,0,204,0.12); --neon-orange-glow:rgba(255,0,204,0.4);
+  --neon-pink:#ff00cc; --neon-pink-dim:rgba(255,0,204,0.14); --neon-pink-glow:rgba(255,0,204,0.5);
+  --neon-gold:#ccff00; --neon-gold-dim:rgba(204,255,0,0.13);
+  --neon-purple:#ff00cc; --neon-purple-dim:rgba(255,0,204,0.12); --neon-purple-glow:rgba(255,0,204,0.4);
+  --green:#ccff00; --green-dim:rgba(204,255,0,0.13); --green-glow:rgba(204,255,0,0.45);
+  --orange:#ff00cc; --orange-dim:rgba(255,0,204,0.12); --orange-glow:rgba(255,0,204,0.4);
+  --red:#ff00cc; --yellow:#ccff00; --blue:#ff00cc;
+  --sets-color:#ff00cc; --reps-color:#ccff00; --weight-color:#ff00cc; --dur-color:#ccff00;
+  --sets-dim:rgba(255,0,204,0.12); --sets-glow:rgba(255,0,204,0.35);
+  --reps-dim:rgba(204,255,0,0.12); --reps-glow:rgba(204,255,0,0.35);
+  --weight-dim:rgba(255,0,204,0.12); --weight-glow:rgba(255,0,204,0.35);
+  --dur-dim:rgba(204,255,0,0.12); --dur-glow:rgba(204,255,0,0.35);
+  --pr-pink:#ff00cc; --pr-pink-dim:rgba(255,0,204,0.12); --pr-pink-glow:rgba(255,0,204,0.5);
+  --purple:#ff00cc; --purple-dim:rgba(255,0,204,0.12); --purple-glow:rgba(255,0,204,0.35);
+  --recovery-fresh:#ccff00; --recovery-mod:#ff00cc; --recovery-sore:#ff0055;
+  --border-glow:rgba(255,0,204,0.5);
+  --btn-grad: linear-gradient(135deg,#ff00cc,#ccff00);
+}
+
+/* CYBER BLUE — Electric cobalt + ice white on deep navy */
+[data-theme="cyber-blue"] {
+  --bg:#000820; --bg2:#000d30;
+  --surface:rgba(0,100,255,0.06); --surface2:rgba(0,120,255,0.1);
+  --glass:rgba(0,8,30,0.82); --glass2:rgba(0,10,38,0.92);
+  --border:rgba(0,140,255,0.14); --border2:rgba(0,160,255,0.24);
+  --neon-blue:#00aaff; --neon-blue-dim:rgba(0,170,255,0.14); --neon-blue-glow:rgba(0,170,255,0.5);
+  --neon-green:#00ffee; --neon-green-dim:rgba(0,255,238,0.12); --neon-green-glow:rgba(0,255,238,0.45);
+  --neon-orange:#00aaff; --neon-orange-dim:rgba(0,170,255,0.12); --neon-orange-glow:rgba(0,170,255,0.4);
+  --neon-pink:#6688ff; --neon-pink-dim:rgba(102,136,255,0.12); --neon-pink-glow:rgba(102,136,255,0.4);
+  --neon-gold:#00ffee; --neon-gold-dim:rgba(0,255,238,0.12);
+  --neon-purple:#6688ff; --neon-purple-dim:rgba(102,136,255,0.12); --neon-purple-glow:rgba(102,136,255,0.35);
+  --green:#00ffee; --green-dim:rgba(0,255,238,0.12); --green-glow:rgba(0,255,238,0.45);
+  --orange:#00aaff; --orange-dim:rgba(0,170,255,0.12); --orange-glow:rgba(0,170,255,0.4);
+  --red:#6688ff; --yellow:#00ffee; --blue:#00aaff;
+  --sets-color:#00aaff; --reps-color:#00ffee; --weight-color:#6688ff; --dur-color:#00ffee;
+  --sets-dim:rgba(0,170,255,0.12); --sets-glow:rgba(0,170,255,0.38);
+  --reps-dim:rgba(0,255,238,0.12); --reps-glow:rgba(0,255,238,0.38);
+  --weight-dim:rgba(102,136,255,0.12); --weight-glow:rgba(102,136,255,0.35);
+  --dur-dim:rgba(0,255,238,0.12); --dur-glow:rgba(0,255,238,0.35);
+  --pr-pink:#6688ff; --pr-pink-dim:rgba(102,136,255,0.12); --pr-pink-glow:rgba(102,136,255,0.45);
+  --purple:#6688ff; --purple-dim:rgba(102,136,255,0.12); --purple-glow:rgba(102,136,255,0.35);
+  --recovery-fresh:#00ffee; --recovery-mod:#00aaff; --recovery-sore:#6688ff;
+  --border-glow:rgba(0,170,255,0.5);
+  --btn-grad: linear-gradient(135deg,#6688ff,#00aaff);
+}
+
+/* CRIMSON BEAST — Blood red + ember on pure black */
+[data-theme="crimson"] {
+  --bg:#080000; --bg2:#0f0000;
+  --surface:rgba(200,0,0,0.06); --surface2:rgba(220,0,0,0.1);
+  --glass:rgba(8,0,0,0.84); --glass2:rgba(14,0,0,0.92);
+  --border:rgba(200,0,0,0.13); --border2:rgba(220,0,0,0.22);
+  --neon-blue:#ff2020; --neon-blue-dim:rgba(255,32,32,0.14); --neon-blue-glow:rgba(255,32,32,0.5);
+  --neon-green:#ff6600; --neon-green-dim:rgba(255,102,0,0.12); --neon-green-glow:rgba(255,102,0,0.45);
+  --neon-orange:#ff6600; --neon-orange-dim:rgba(255,102,0,0.12); --neon-orange-glow:rgba(255,102,0,0.4);
+  --neon-pink:#ff2020; --neon-pink-dim:rgba(255,32,32,0.14); --neon-pink-glow:rgba(255,32,32,0.5);
+  --neon-gold:#ffaa00; --neon-gold-dim:rgba(255,170,0,0.12);
+  --neon-purple:#ff2020; --neon-purple-dim:rgba(255,32,32,0.12); --neon-purple-glow:rgba(255,32,32,0.4);
+  --green:#ff6600; --green-dim:rgba(255,102,0,0.12); --green-glow:rgba(255,102,0,0.45);
+  --orange:#ff6600; --orange-dim:rgba(255,102,0,0.12); --orange-glow:rgba(255,102,0,0.4);
+  --red:#ff2020; --yellow:#ffaa00; --blue:#ff2020;
+  --sets-color:#ff2020; --reps-color:#ff6600; --weight-color:#ff2020; --dur-color:#ffaa00;
+  --sets-dim:rgba(255,32,32,0.12); --sets-glow:rgba(255,32,32,0.38);
+  --reps-dim:rgba(255,102,0,0.12); --reps-glow:rgba(255,102,0,0.38);
+  --weight-dim:rgba(255,32,32,0.12); --weight-glow:rgba(255,32,32,0.38);
+  --dur-dim:rgba(255,170,0,0.12); --dur-glow:rgba(255,170,0,0.35);
+  --pr-pink:#ff2020; --pr-pink-dim:rgba(255,32,32,0.12); --pr-pink-glow:rgba(255,32,32,0.5);
+  --purple:#ff2020; --purple-dim:rgba(255,32,32,0.12); --purple-glow:rgba(255,32,32,0.35);
+  --recovery-fresh:#ff6600; --recovery-mod:#ff2020; --recovery-sore:#cc0000;
+  --border-glow:rgba(255,32,32,0.5);
+  --btn-grad: linear-gradient(135deg,#cc0000,#ff6600);
+}
+
+/* MIDNIGHT GOLD — Royal gold on obsidian with platinum accents */
+[data-theme="midnight-gold"] {
+  --bg:#05030a; --bg2:#080510;
+  --surface:rgba(220,165,0,0.05); --surface2:rgba(230,175,0,0.09);
+  --glass:rgba(5,3,10,0.84); --glass2:rgba(8,5,15,0.92);
+  --border:rgba(200,150,0,0.13); --border2:rgba(220,165,0,0.22);
+  --neon-blue:#e8b800; --neon-blue-dim:rgba(232,184,0,0.14); --neon-blue-glow:rgba(232,184,0,0.5);
+  --neon-green:#c0c0c0; --neon-green-dim:rgba(192,192,192,0.12); --neon-green-glow:rgba(192,192,192,0.4);
+  --neon-orange:#e8b800; --neon-orange-dim:rgba(232,184,0,0.12); --neon-orange-glow:rgba(232,184,0,0.4);
+  --neon-pink:#e8b800; --neon-pink-dim:rgba(232,184,0,0.12); --neon-pink-glow:rgba(232,184,0,0.5);
+  --neon-gold:#e8b800; --neon-gold-dim:rgba(232,184,0,0.14);
+  --neon-purple:#b8860b; --neon-purple-dim:rgba(184,134,11,0.12); --neon-purple-glow:rgba(184,134,11,0.4);
+  --green:#c0c0c0; --green-dim:rgba(192,192,192,0.12); --green-glow:rgba(192,192,192,0.35);
+  --orange:#e8b800; --orange-dim:rgba(232,184,0,0.12); --orange-glow:rgba(232,184,0,0.4);
+  --red:#cc8800; --yellow:#e8b800; --blue:#e8b800;
+  --sets-color:#e8b800; --reps-color:#c0c0c0; --weight-color:#b8860b; --dur-color:#e8b800;
+  --sets-dim:rgba(232,184,0,0.12); --sets-glow:rgba(232,184,0,0.38);
+  --reps-dim:rgba(192,192,192,0.12); --reps-glow:rgba(192,192,192,0.35);
+  --weight-dim:rgba(184,134,11,0.12); --weight-glow:rgba(184,134,11,0.35);
+  --dur-dim:rgba(232,184,0,0.12); --dur-glow:rgba(232,184,0,0.38);
+  --pr-pink:#e8b800; --pr-pink-dim:rgba(232,184,0,0.12); --pr-pink-glow:rgba(232,184,0,0.5);
+  --purple:#b8860b; --purple-dim:rgba(184,134,11,0.12); --purple-glow:rgba(184,134,11,0.35);
+  --recovery-fresh:#c0c0c0; --recovery-mod:#e8b800; --recovery-sore:#cc8800;
+  --border-glow:rgba(232,184,0,0.5);
+  --btn-grad: linear-gradient(135deg,#b8860b,#e8b800);
+}
+
+/* AMOLED BLACK — Pure pitch black OLED + ultra-vivid neon */
+[data-theme="amoled"] {
+  --bg:#000000; --bg2:#000000;
+  --surface:rgba(255,255,255,0.03); --surface2:rgba(255,255,255,0.05);
+  --glass:rgba(0,0,0,0.9); --glass2:rgba(0,0,0,0.95);
+  --border:rgba(255,255,255,0.06); --border2:rgba(255,255,255,0.1);
+  --neon-blue:#00ffff; --neon-blue-dim:rgba(0,255,255,0.1); --neon-blue-glow:rgba(0,255,255,0.5);
+  --neon-green:#00ff44; --neon-green-dim:rgba(0,255,68,0.1); --neon-green-glow:rgba(0,255,68,0.5);
+  --neon-orange:#ff8800; --neon-orange-dim:rgba(255,136,0,0.1); --neon-orange-glow:rgba(255,136,0,0.5);
+  --neon-pink:#ff0088; --neon-pink-dim:rgba(255,0,136,0.1); --neon-pink-glow:rgba(255,0,136,0.5);
+  --neon-gold:#ffdd00; --neon-gold-dim:rgba(255,221,0,0.1);
   --neon-purple:#aa00ff; --neon-purple-dim:rgba(170,0,255,0.1); --neon-purple-glow:rgba(170,0,255,0.5);
   --green:#00ff44; --green-dim:rgba(0,255,68,0.1); --green-glow:rgba(0,255,68,0.5);
   --orange:#ff8800; --orange-dim:rgba(255,136,0,0.1); --orange-glow:rgba(255,136,0,0.5);
